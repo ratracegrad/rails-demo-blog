@@ -28,9 +28,6 @@ gem 'jbuilder', '~> 2.7'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
 
-# Make errors better looking
-gem 'better_errors', '~> 2.5', '>= 2.5.1'
-
 # Bulma for css
 gem 'bulma-rails', '~> 0.8.0'
 
@@ -50,7 +47,9 @@ group :development do
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'guard', '~> 2.16', '>= 2.16.1'
-  gem 'guard-livereload', '~> 2.5', '>= 2.5.2'
+  gem 'guard-livereload', '~> 2.5', '>= 2.5.2', require: false
+  # Make errors better looking
+  gem 'better_errors', '~> 2.5', '>= 2.5.1'
 end
 
 group :test do
